@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+
+   <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -20,72 +21,91 @@
 
 
     <form id="survey-form">
-      
-      <label  id="name-label">Name</label>
-      <input name = "text" id="name" type="text" required placeholder="Enter ">
+   <label id="name-label"><b>Name:</b></label>
+            <input id="name" type="name" name="name" class="form" required placeholder="Full Name"><br>
+            <br>
+            <label id="email-label"><b>Email:</b></label>
+            <input id="email" type="email" name="email" class="form" required placeholder="example@mail.com"><br>
+            <br>
+            <label id="number-label"><b>Age:</b></label>
+            <input id="number" type="number" name="number" class="form" min="5" max="99" placeholder="12+">
+            <br>
+            <br>
+  <div> <label id="dropdowns">What is your favorite feature of freeCodeCamp?
 
-<br>
-      <label  id="email-label">Email</label>
-      <input id="email" type="email" required placeholder = "Enter your email">
-
-<br>
-   <label  id="number-label">number</label>
-   <input type="number" id="number" value="number" min="14" max="99" placeholder="Enter a number">
- <div>      
-   <label id="dropdowns">Choose a a radio</label>
-<br>
+</label>
    <select name="radios" id="dropdown">
-    <option value="FM 97.1">FM 97.1 </option>
-    <option value="FM 97.2">FM 97.2</option>
-    <option value="FM 97.3">FM 97.3</option>
-    <option value="FM 97.4">FM 97.4</option>
+    <option value="text">challanges </option>
+    <option value="text">Community</option>
+    <option value="text">Projects</option>
+    <option value="text">Open Source</option>
   </select>
-  </div>
+  <div>
+    <br>
     </form>
+
+<div>      
+  <label id="dropdowns">Which option best describes your current role?
+
+</label>
+<br>
+  <select name="radios" id="dropdown">
+   <option value="FM 97.1">Student </option>
+   <option value="FM 97.2">Full time</option>
+   <option value="FM 97.3">Part-time</option>
+   <option value="FM 97.4">Preferred not to say</option>
+ </select>
+ </div>
+  
+    </form>
+    <br>
     <fieldset>
-    <legend>Select a radio station:</legend>
-
-    <div>
-      <input type="radio" id="radio1" name="radio" value="97.1"
-             checked>
-      <label>FM 97.1</label>
-    </div>
-
-    <div>
-      <input type="radio" id="radio2" name="radio" value="radio">
-      <label for="dewey">FM 97.2</label>
-    </div>
-
-    <div>
-      <input type="radio" id="radio3" name="radio" value="radio">
-      <label>FM 97.3</label>
-    </div>
-</fieldset>
-<br>
-<label>Whats your favourite radio station</label>
-<div id="survey-form">
-<br>
-<input type="radio" id="radio1" name="radio" value="97.1" checked>
-<label>FM 97.1</label>
-<br>
-<input type="radio" id="radio2" name="radio" value="radio">
-<label>FM 97.1</label>
-<br>
-<br>
-<label>What would you like to see improved?</label>
-<br>
-<input type="checkbox" id="radio3" name="radio" value="radio">
-<label>Front-end Projects</label>
-<br>
-<input type="checkbox" id="radio3" name="radio" value="radio">
-<label>Back-end Projects</label>
-<br>
-<br>
-<textarea>
-</textarea>
-<button type="submit" id="submit"></button>
-</div>
-
+      <legend>Would you recommend freeCodeCamp to a friend?
+</legend>
+  
+      <div>
+        <input type="radio" id="radio1" name="radio" value="radio"
+               checked>
+        <label>Sure</label>
+      </div>
+  
+      <div>
+        <input type="radio" id="radio2" name="radio" value="radio">
+        <label for="dewey">Maybe</label>
+      </div>
+  
+      <div>
+        <input type="radio" id="radio3" name="radio" value="radio">
+        <label>Not Sure</label>
+      </div>
+  </fieldset>
+  <br>
+  <label>Which of these programming languages are you familiar with?</label>
+  <div id="survey-form">
+  <br>
+  <input type="radio" id="radio1" name="radio" value="97.1" checked>
+  <label>Javascript</label>
+  <br>
+  <input type="radio" id="radio2" name="radio" value="radio">
+  <label>Python</label>
+  <br>
+  <input type="radio" id="radio2" name="radio" value="radio">
+  <label>C++</label>
+  <br>
+  <br>
+  <label>What would you like to see improved?</label>
+  <br>
+  <input type="checkbox" id="radio3" name="radio" value="radio">
+  <label>Front-end Projects</label>
+  <br>
+  <input type="checkbox" id="radio3" name="radio" value="radio">
+  <label>Back-end Projects</label>
+  <br>
+  <br>
+  <textarea>
+  </textarea>
+  <button type="submit" id="submit"></button>
+  </div>
  
 
 
